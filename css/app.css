@@ -1,0 +1,90 @@
+body {
+    background-color: #ee3f54;
+    font-family: 'Bree Serif', serif;
+}
+
+h1,h2,h3,h4,h5,h6,button,a {
+    font-family: 'Bree Serif', serif;
+}
+
+#logo-container .callout{
+    background-color: #ee3f54;
+    color: white;
+    margin-bottom: 0px;
+}
+
+#social-container {
+    background-color: #1c3643;
+}
+
+#menu-container {
+    background-color: #48a18d;
+}
+
+#menu-container li a{
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+#submenu-container{
+    border: 0;
+}
+
+#menu-container li a:hover,
+#submenu-container li a:hover{
+    color: #f6e15f;
+}
+
+#submenu-container li a{
+    background-color: #48a18d;
+    color: white;
+}
+
+#tickets-action .callout {
+    background-color: #5e7eb7;
+    color: white;
+    margin-bottom: 0px;
+}
+
+#tickets-action .callout button {
+    border: 1px solid white;
+    color: white;
+}
+
+#lineup-container {
+    padding: 16px 0;
+}
+
+#lineup-container,
+#lineup-container .tabs,
+#lineup-container .tabs .tabs-title,
+#lineup-container .tabs .tabs-title.is-active a,
+#lineup-container .tabs-panel {
+    background-color: #9676af;
+    border: 0;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+}
+.tabs-content {
+    border:0px;
+}
+
+#lineup-container .tabs .tabs-title a {
+    font-size: 18px;
+    color: #a7fffb;
+}
+
+#lineup-container .tabs .tabs-title a:hover {
+    background-color: #9676af;
+    color: white;
+}
+
+.tabs-title {
+    display: inline-block;
+    float: none;
+}
+
+#lineup-container .orbit-container {
+    margin-bottom: 16px;
+}
