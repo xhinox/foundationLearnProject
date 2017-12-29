@@ -11,25 +11,25 @@
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
-
         <div class="off-canvas-wrapper">
             <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-                <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
                     <nav data-magellan>
-                        <ul class="vertical menu">
+                        <ul class="vertical menu" data-drilldown>
                             <li><a href="#tickets-container">Tickets</a></li>
                             <li><a href="#lineup-container">Lineup</a>
-                                <ul class="menu">
-                                    <!-- <li><a href="#viernes" data-toggle-dia="panelViernes">Viernes</a></li>
+                                <ul class="vertical menu">
+                                    <li><a href="#viernes" data-toggle-dia="panelViernes">Viernes</a></li>
                                     <li><a href="#sabado" data-toggle-dia="panelSabado">Sábado</a></li>
-                                    <li><a href="#domingo" data-toggle-dia="panelDomingo">Domingo</a></li> -->
+                                    <li><a href="#domingo" data-toggle-dia="panelDomingo">Domingo</a></li>
                                 </ul>
                             </li>
                             <li><a href="#info-container">Info</a></li>
                             <li><a href="#suscribete-container">Suscríbete</a></li>
-                        </ul>
+                          </ul>
                     </nav>
+
                 </div>
 
                 <div class="off-canvas-content" data-off-canvas-content>
@@ -55,7 +55,7 @@
                     <!-- Logo -->
 
                     <!-- Menu -->
-                    <section data-sticky-container >
+                    <section data-sticky-container>
                         <div id="sticky" class="data-sticky" data-sticky data-options="marginTop:0;" data-top-anchor="150" data-sticky-on="small">
                             <nav id="menu-container" class="title-bar" data-magellan>
                                 <ul class="menu align-spaced show-for-small-only">
@@ -312,7 +312,7 @@
                     <!-- LineUp -->
 
                     <section id="tickets-container" data-magellan-target="tickets-container">
-                        <h1 class="text-center">Comprar boletos</h1>
+                        <h3 class="text-center">Comprar boletos</h1>
                         <div class="row" data-equalizer data-equalize-on="small">
                             <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
                                 <ul class="pricing-table no-bullet text-center">
@@ -355,13 +355,16 @@
 
                     <!-- Suscribete -->
                     <section id="suscribete-container" data-magellan-target="suscribete-container">
-                        <h1 class="text-center">Suscríbete</h1>
-                        <h2 class="text-center"><small>Y recibe las últimas novedades del concierto</small></h2>
-                        <form action="" method="POST">
+                        <h3 class="text-center">Suscríbete</h1>
+                        <h4 class="text-center"><small>Y recibe las últimas novedades del concierto</small></h2>
+                        <form action="" method="" novalidate data-abide>
+                            <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display:none;">
+                                <p><i class="fi-alert"></i> El formato del correo no valido</p>
+                            </div>
                             <div class="row columns small-12 medium-6">
                                 <div class="input-group">
                                     <span class="input-group-label"><i class="fi-mail"></i></span>
-                                    <input class="input-group-field" type="email" placeholder="tu@correo.com">
+                                    <input class="input-group-field" type="email" placeholder="tu@correo.com" required>
                                     <div class="input-group-button">
                                         <input type="submit" class="button" value="Suscribirse!">
                                     </div>
@@ -372,13 +375,16 @@
 
                     <!-- Info -->
                     <section id="info-container" data-magellan-target="info-container">
-                        <h1 class="text-center">Información</h1>
+                        <h3 class="text-center">Información</h1>
                         <div class="info-map" data-interchange="[assets/maps/map-small.html, small], [assets/maps/map.html, medium]"></div>
                     </section>
 
                 </div>
             </div>
         </div>
+
+
+
 
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/what-input.js"></script>

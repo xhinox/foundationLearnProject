@@ -1,9 +1,9 @@
 body {
-    background-color: #ee3f54;
+    background-color: black;
     font-family: 'Bree Serif', serif;
 }
 
-h1,h2,h3,h4,h5,h6,button,a {
+h1,h2,h3,h4,h5,h6,button,a, input[type="submit"] {
     font-family: 'Bree Serif', serif;
 }
 
@@ -93,9 +93,13 @@ h1,h2,h3,h4,h5,h6,button,a {
     text-align: right;
 }
 
+
 /* Pricing table */
 
-.pricing-table { border: solid 1px #DDDDDD; }
+.pricing-table {
+    background-color: white;
+    border: solid 1px #DDDDDD;
+}
 .pricing-table li {
     border-bottom: dotted 1px #DDDDDD;
     font-size: 0.75rem;
@@ -123,8 +127,39 @@ h1,h2,h3,h4,h5,h6,button,a {
     margin: 0;
 }
 
+#tickets-container {
+    background-color: #f6e15f;
+    color: #161742;
+    padding: 16px 0;
+}
+
+#info-container {
+    background-color: #161742;
+    color: white;
+    padding: 16px 0;
+}
+
 .info-map iframe {
     width: 100%;
+}
+
+#suscribete-container {
+    background-color: #ee1354;
+    color: white;
+    padding: 16px 0px;
+}
+
+#suscribete-container h4 small {
+    color:#ffcddc;
+}
+
+#suscribete-container .error-container {
+    font-family: 'Bree Serif', serif;
+}
+
+.is-invalid-input:not(:focus) {
+    background-color: rgb(255, 228, 228);
+    border-color: rgb(255, 228, 228);
 }
 
 .data-sticky {
@@ -137,4 +172,12 @@ h1,h2,h3,h4,h5,h6,button,a {
     background-color: black;
     color: white;
     font-family: 'Bree Serif', serif;
+}
+
+#offCanvas .is-drilldown-submenu-parent > a::after {
+    border-color: transparent transparent transparent white;
+}
+
+#offCanvas .js-drilldown-back > a::before {
+    border-color: transparent white transparent transparent;
 }
